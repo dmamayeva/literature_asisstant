@@ -4,7 +4,7 @@ from langchain.vectorstores import FAISS
 import streamlit as st
 from streamlit_chat import message
 
-HUGGING_FACE_API_KEY = "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"
+HUGGING_FACE_API_KEY = 
 hf_embeddings = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
 vectorstore = FAISS.load_local("faiss_index", hf_embeddings)
 
